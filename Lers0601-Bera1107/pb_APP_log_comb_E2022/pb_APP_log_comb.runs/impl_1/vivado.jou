@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May  4 17:36:34 2022
+# Process ID: 63679
+# Current directory: /mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.runs/impl_1
+# Command line: vivado -log Add4bit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Add4bit.tcl -notrace
+# Log file: /mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.runs/impl_1/Add4bit.vdi
+# Journal file: /mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Add4bit.tcl -notrace

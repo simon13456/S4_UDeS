@@ -1,0 +1,270 @@
+
+*** Running vivado
+    with args -log Add4bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Add4bit.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Add4bit.tcl -notrace
+Command: synth_design -top Add4bit -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 63484
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2470.922 ; gain = 0.000 ; free physical = 125 ; free virtual = 4992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Add4bit' [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add4bit.vhd:42]
+INFO: [Synth 8-3491] module 'Add1bitA' declared at '/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitA.vhd:34' bound to instance 'FA1' of component 'Add1bitA' [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add4bit.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'Add1bitA' [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitA.vhd:42]
+INFO: [Synth 8-226] default block is never used [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitA.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Add1bitA' (1#1) [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitA.vhd:42]
+INFO: [Synth 8-3491] module 'Add1bitA' declared at '/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitA.vhd:34' bound to instance 'FA2' of component 'Add1bitA' [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add4bit.vhd:61]
+INFO: [Synth 8-3491] module 'Add1bitB' declared at '/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:34' bound to instance 'FA3' of component 'Add1bitB' [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add4bit.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'Add1bitB' [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:42]
+WARNING: [Synth 8-614] signal 'CI' is read in the process but is not in the sensitivity list [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:46]
+WARNING: [Synth 8-614] signal 'X' is read in the process but is not in the sensitivity list [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:46]
+WARNING: [Synth 8-614] signal 'Y' is read in the process but is not in the sensitivity list [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Add1bitB' (2#1) [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:42]
+INFO: [Synth 8-3491] module 'Add1bitB' declared at '/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:34' bound to instance 'FA4' of component 'Add1bitB' [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add4bit.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'Add4bit' (3#1) [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add4bit.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2470.922 ; gain = 0.000 ; free physical = 910 ; free virtual = 5541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2470.922 ; gain = 0.000 ; free physical = 968 ; free virtual = 5599
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2470.922 ; gain = 0.000 ; free physical = 968 ; free virtual = 5599
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2470.922 ; gain = 0.000 ; free physical = 961 ; free virtual = 5592
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:18]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports sysclk]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:18]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'o_SSD[0]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_SSD[1]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_SSD[2]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_SSD[3]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_SSD[4]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_SSD[5]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_SSD[6]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_SSD[7]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_pmodled[0]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_pmodled[1]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_pmodled[2]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_pmodled[3]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_pmodled[4]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_pmodled[5]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_pmodled[6]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_pmodled[7]'. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Add4bit_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Add4bit_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2534.676 ; gain = 0.000 ; free physical = 881 ; free virtual = 5515
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2534.676 ; gain = 0.000 ; free physical = 881 ; free virtual = 5514
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 940 ; free virtual = 5577
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 940 ; free virtual = 5577
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 939 ; free virtual = 5576
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 928 ; free virtual = 5568
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   8 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 906 ; free virtual = 5555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 776 ; free virtual = 5433
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 775 ; free virtual = 5433
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 774 ; free virtual = 5432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 774 ; free virtual = 5432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 774 ; free virtual = 5432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 774 ; free virtual = 5432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 774 ; free virtual = 5432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 774 ; free virtual = 5432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 774 ; free virtual = 5432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     2|
+|2     |LUT5 |     4|
+|3     |IBUF |     9|
+|4     |OBUF |     5|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 774 ; free virtual = 5432
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2534.676 ; gain = 0.000 ; free physical = 832 ; free virtual = 5490
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2534.676 ; gain = 63.754 ; free physical = 831 ; free virtual = 5490
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2534.676 ; gain = 0.000 ; free physical = 822 ; free virtual = 5483
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2534.676 ; gain = 0.000 ; free physical = 854 ; free virtual = 5517
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 21 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2534.676 ; gain = 64.195 ; free physical = 998 ; free virtual = 5662
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.runs/synth_1/Add4bit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Add4bit_utilization_synth.rpt -pb Add4bit_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May  4 17:36:22 2022...
