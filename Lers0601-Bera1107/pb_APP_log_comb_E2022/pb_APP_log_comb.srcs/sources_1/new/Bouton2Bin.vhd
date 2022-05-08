@@ -55,14 +55,14 @@ begin
             DAFF0 <= Unites_ns;
             DAFF1 <= Dizaine;    
         elsif select_v = "0001" then  -- Affiche la valeur en hexa
-            DAFF1 <= "0000"; -- On doit rien afficher
+            DAFF1 <= "1111"; -- On doit rien afficher
             DAFF0 <= ADCbin; -- Vrai si la FIgure 2 Afficheur 7 segments du guide esdt vraie      
         elsif select_v = "0010" then  -- Affiche la valeur en BCD-5
             DAFF0 <= Unite_s;
             DAFF1 <= Code_signe;       
         else                          -- Affiche Er
-            DAFF0 <= "0000";
-            DAFF1 <= "0000";
+            DAFF0 <= "1101"; -- r 
+            DAFF1 <= "1110"; -- E
         end if;                   
     end process;
 end Behavioral;
