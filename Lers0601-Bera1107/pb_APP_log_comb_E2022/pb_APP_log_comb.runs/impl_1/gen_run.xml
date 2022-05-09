@@ -1,80 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1651700144">
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="PA-TCL" Name="Add4bit.tcl"/>
+  <File Type="REPORTS-TCL" Name="Add4bit_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="Add4bit.msk"/>
+  <File Type="RDI-RDI" Name="Add4bit.vdi"/>
+  <File Type="BG-BIT" Name="Add4bit.bit"/>
+  <File Type="BG-DRC" Name="Add4bit.drc"/>
+  <File Type="BG-BGN" Name="Add4bit.bgn"/>
+  <File Type="BG-BIN" Name="Add4bit.bin"/>
+  <File Type="BITSTR-RBT" Name="Add4bit.rbt"/>
+  <File Type="BITSTR-NKY" Name="Add4bit.nky"/>
+  <File Type="BITSTR-BMM" Name="Add4bit_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Add4bit.mmi"/>
   <File Type="BITSTR-SYSDEF" Name="Add4bit.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="Add4bit.ltx"/>
-  <File Type="BG-BGN" Name="Add4bit.bgn"/>
-  <File Type="NPI_FILE" Name="Add4bit.npi"/>
-  <File Type="BG-DRC" Name="Add4bit.drc"/>
-  <File Type="RNPI_FILE" Name="Add4bit.rnpi"/>
-  <File Type="CFI_FILE" Name="Add4bit.cfi"/>
-  <File Type="RCFI_FILE" Name="Add4bit.rcfi"/>
-  <File Type="PDI-FILE" Name="Add4bit.pdi"/>
-  <File Type="BITSTR-MMI" Name="Add4bit.mmi"/>
-  <File Type="BITSTR-BMM" Name="Add4bit_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="Add4bit.nky"/>
-  <File Type="BITSTR-RBT" Name="Add4bit.rbt"/>
-  <File Type="BITSTR-MSK" Name="Add4bit.msk"/>
-  <File Type="RBD_FILE" Name="Add4bit.rbd"/>
-  <File Type="BG-BIN" Name="Add4bit.bin"/>
-  <File Type="BG-BIT" Name="Add4bit.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Add4bit_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Add4bit_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Add4bit_bus_skew_postroute_physopted.rpt"/>
-  <File Type="RDI-RDI" Name="Add4bit.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Add4bit_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Add4bit_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Add4bit_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Add4bit_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Add4bit_postroute_physopt.dcp"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Add4bit_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Add4bit_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="Add4bit_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Add4bit_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="Add4bit_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Add4bit_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="Add4bit_route_status.pb"/>
-  <File Type="ROUTE-STATUS" Name="Add4bit_route_status.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="Add4bit_power_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="Add4bit_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="Add4bit_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Add4bit_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Add4bit_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Add4bit_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="Add4bit_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="Add4bit_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="Add4bit_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Add4bit_routed_bb.dcp"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="Add4bit.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Add4bit_incremental_reuse_pre_placed.rpt"/>
   <File Type="ROUTE-DCP" Name="Add4bit_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="Add4bit_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="Add4bit_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="Add4bit_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Add4bit_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Add4bit_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Add4bit_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="Add4bit_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Add4bit_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Add4bit_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="Add4bit_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Add4bit_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="Add4bit_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Add4bit_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="Add4bit_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="Add4bit_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="Add4bit_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="Add4bit_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="Add4bit_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="Add4bit_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="Add4bit.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Add4bit_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="Add4bit_drc_opted.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Add4bit_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="Add4bit_timing_summary_routed.pb"/>
   <File Type="OPT-DCP" Name="Add4bit_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="Add4bit_timing_summary_init.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Add4bit_bus_skew_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="Add4bit_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Add4bit_bus_skew_routed.pb"/>
-  <File Type="PA-TCL" Name="Add4bit.tcl"/>
+  <File Type="PLACE-DCP" Name="Add4bit_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Add4bit_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Add4bit_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Add4bit_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Add4bit_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Add4bit_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="Add4bit.pdi"/>
+  <File Type="RCFI_FILE" Name="Add4bit.rcfi"/>
+  <File Type="CFI_FILE" Name="Add4bit.cfi"/>
+  <File Type="RNPI_FILE" Name="Add4bit.rnpi"/>
+  <File Type="NPI_FILE" Name="Add4bit.npi"/>
+  <File Type="RBD_FILE" Name="Add4bit.rbd"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/src/septSegments_encodeur.vhd">
@@ -171,5 +131,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>
