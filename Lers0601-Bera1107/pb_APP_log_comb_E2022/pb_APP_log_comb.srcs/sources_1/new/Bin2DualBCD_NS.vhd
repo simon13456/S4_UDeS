@@ -79,6 +79,9 @@ begin
             when "1011" =>
                 Dizaines <="0001";
                 Unites_ns <= "0001";
+            when others =>
+                Dizaines <="0000";
+                Unites_ns <= "0000";
         end case;
     end process;
 end Behavioral;
