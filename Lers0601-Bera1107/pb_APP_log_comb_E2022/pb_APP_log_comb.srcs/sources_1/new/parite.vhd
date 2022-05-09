@@ -76,6 +76,7 @@ begin
                     parite <= '1';
                 when "1111" =>
                     parite <= '0';
+                when others => parite <= '0';
             end case;            
         else    -- Parite impair
             case ADCbin is
@@ -111,6 +112,7 @@ begin
                     parite <= '0';
                 when "1111" =>
                     parite <= '1';
+                when others => parite <= '0';
             end case;
         end if;
     end process;
