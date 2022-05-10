@@ -54,54 +54,79 @@ architecture BEHAVIORAL of AppCombi_top is
    --
    signal d_AFF0            : std_logic_vector (3 downto 0):= "0000";
    signal d_AFF1            : std_logic_vector (3 downto 0):= "0000";
- 
+   --
+   signal d_S1              : std_logic;
+   signal d_erreur          : std_logic;
+   signal d_Parite          : std_logic;
+   signal d_ADCbin          : std_logic_vector (3 downto 0);
+   signal d_Dizaines        : std_logic_vector (3 downto 0);
+   signal d_Unites_ns       : std_logic_vector (3 downto 0);
+   signal d_Code_signe      : std_logic_vector (3 downto 0);
+   signal d_Unites_s        : std_logic_vector (3 downto 0);
+   signal d_A23             : std_logic_vector (3 downto 0);
    
- component synchro_module_v2 is
-    generic (const_CLK_syst_MHz: integer := freq_sys_MHz);
+   
+   --
+    component synchro_module_v2 is
+        generic (const_CLK_syst_MHz: integer := freq_sys_MHz);
         Port ( 
-           clkm        : in  STD_LOGIC;  -- Entrï¿½e  horloge maitre
-           o_CLK_5MHz  : out STD_LOGIC;  -- horloge divise utilise pour le circuit             
-           o_S_1Hz     : out  STD_LOGIC  -- Signal temoin 1 Hz
+             clkm           : in  STD_LOGIC;  -- Entrï¿½e  horloge maitre
+             o_CLK_5MHz     : out STD_LOGIC;  -- horloge divise utilise pour le circuit             
+             o_S_1Hz        : out STD_LOGIC  -- Signal temoin 1 Hz
             );
         end component;  
     
     component septSegments_Top is
-        Port (   clk          : in   STD_LOGIC;                      -- horloge systeme, typique 100 MHz (preciser par le constante)
-             i_AFF0       : in   STD_LOGIC_VECTOR (3 downto 0);  -- donnee a afficher sur 8 bits : chiffre hexa position 1 et 0
-             i_AFF1       : in   STD_LOGIC_VECTOR (3 downto 0);  -- donnee a afficher sur 8 bits : chiffre hexa position 1 et 0     
-             o_AFFSSD_Sim : out string(1 to 2);
-             o_AFFSSD     : out  STD_LOGIC_VECTOR (7 downto 0)  
+        Port (   clk        : in  STD_LOGIC;                      -- horloge systeme, typique 100 MHz (preciser par le constante)
+             i_AFF0         : in  STD_LOGIC_VECTOR (3 downto 0);  -- donnee a afficher sur 8 bits : chiffre hexa position 1 et 0
+             i_AFF1         : in  STD_LOGIC_VECTOR (3 downto 0);  -- donnee a afficher sur 8 bits : chiffre hexa position 1 et 0     
+             o_AFFSSD_Sim   : out string(1 to 2);
+             o_AFFSSD       : out STD_LOGIC_VECTOR (7 downto 0)  
            );
         end component;
     
     component Fct2_3 is                                           -- Fonction de multiplication par 2/3
-        Port ( ADCbin : in std_logic_vector(3 downto 0);             -- 
-           A23 : out std_logic_vector(3 downto 0));
+        Port ( ADCbin       : in  std_logic_vector(3 downto 0);             -- 
+               A23          : out std_logic_vector(3 downto 0)
+           );
         end component;
-
     component Bin2DualBCD is
-        Port ( ADCbin : in STD_LOGIC_VECTOR (3 downto 0);
-           Dizaines : out STD_LOGIC_VECTOR (3 downto 0);
-           Unites_ns : out STD_LOGIC_VECTOR (3 downto 0);
-           Code_signe : out STD_LOGIC_VECTOR (3 downto 0);
-           Unites_s : out STD_LOGIC_VECTOR (3 downto 0));
+        Port ( ADCbin       : in  STD_LOGIC_VECTOR (3 downto 0);
+               Dizaines     : out STD_LOGIC_VECTOR (3 downto 0);
+               Unites_ns    : out STD_LOGIC_VECTOR (3 downto 0);
+               Code_signe   : out STD_LOGIC_VECTOR (3 downto 0);
+               Unites_s     : out STD_LOGIC_VECTOR (3 downto 0)
+           );
         end component;
     component parite is
-        Port ( ADCbin : in STD_LOGIC_VECTOR (3 downto 0);
-           S1 : in STD_LOGIC;
-           Parite : out STD_LOGIC);
+        Port ( ADCbin       : in  STD_LOGIC_VECTOR (3 downto 0);
+               S1           : in  STD_LOGIC;
+               Parite       : out STD_LOGIC
+           );
     end component;
     component Bouton2Bin is
-        Port ( ADCbin : in STD_LOGIC_VECTOR (3 downto 0); -- Valeur hexa (Rien affiche sur daff1)
-               Dizaine : in STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD
-               Unites_ns : in STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD
-               Code_signe : in STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD - 5
-               Unite_s : in STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD - 5
-               erreur : in STD_LOGIC;
-               BTN : in STD_LOGIC_VECTOR (1 downto 0);
-               S2 : in STD_LOGIC;
-               DAFF0 : out STD_LOGIC_VECTOR (3 downto 0);
-               DAFF1 : out STD_LOGIC_VECTOR (3 downto 0));
+        Port ( ADCbin       : in  STD_LOGIC_VECTOR (3 downto 0); -- Valeur hexa (Rien affiche sur daff1)
+               Dizaine      : in  STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD
+               Unites_ns    : in  STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD
+               Code_signe   : in  STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD - 5
+               Unite_s      : in  STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD - 5
+               erreur       : in  STD_LOGIC;
+               BTN          : in  STD_LOGIC_VECTOR (1 downto 0);
+               S2           : in  STD_LOGIC;
+               DAFF0        : out STD_LOGIC_VECTOR (3 downto 0);
+               DAFF1        : out STD_LOGIC_VECTOR (3 downto 0)
+           );
+    end component;
+    component Thermo2Bin is
+        Port ( i_ADC_th     : in  STD_LOGIC_VECTOR (11 downto 0);
+               ADCbin       : out STD_LOGIC_VECTOR (3 downto 0);
+               erreur       : out STD_LOGIC
+           );
+    end component;
+    component Decodeur3_8 is
+        Port (  A2_3        : in  STD_LOGIC_VECTOR (2 downto 0);
+                LED         : out STD_LOGIC_VECTOR (7 downto 0)
+           );
     end component;
 begin
   
@@ -112,30 +137,66 @@ begin
             o_CLK_5MHz   => clk_5MHz,
             o_S_1Hz      => d_S_1Hz
         );  
-
-   inst_aff :  septSegments_Top 
-       port map (
-           clk    => clk_5MHz,
-           -- donnee a afficher definies sur 8 bits : chiffre hexa position 1 et 0
-           i_AFF1  => d_AFF1, 
-           i_AFF0  => d_AFF0,
-           o_AFFSSD_Sim   => open,   -- ne pas modifier le "open". Ligne pour simulations seulement.
-           o_AFFSSD       => o_SSD   -- sorties directement adaptees au connecteur PmodSSD
-       );
-                   
-                     
+                    
    d_opa               <=  i_sw;                        -- operande A sur interrupteurs
    d_opb               <=  i_btn;                       -- operande B sur boutons
-   d_cin               <=  '0';                     -- la retenue d'entrï¿½e alterne 0 1 a 1 Hz
+   d_cin               <=  '0';                         -- la retenue d'entrï¿½e alterne 0 1 a 1 Hz
       
    d_AFF0              <=  d_sum(3 downto 0);           -- Le resultat de votre additionneur affichï¿½ sur PmodSSD(0)
    d_AFF1              <=  '0' & '0' & '0' & d_Cout;    -- La retenue de sortie affichï¿½e sur PmodSSD(1) (0 ou 1)
    o_led6_r            <=  d_Cout;                      -- La led couleur reprï¿½sente aussi la retenue en sortie  Cout
    o_pmodled           <=  d_opa & d_opb;               -- Les opï¿½randes d'entrï¿½s reproduits combinï¿½s sur Pmod8LD
    o_led (3 downto 0)  <=  '0' & '0' & '0' & d_S_1Hz;   -- La LED0 sur la carte reprï¿½sente la retenue d'entrï¿½e        
+   
 -- Partie ajouté pour l'app   
+
+   CThermo2Bin  : Thermo2Bin        port map(
+                    ADCTH,
+                    d_ADCbin,
+                    d_erreur
+                    );
+                    
+   CBin2DualBCD : Bin2DualBCD       port map(
+                    d_ADCbin,
+                    d_Dizaines,
+                    d_Unites_ns,
+                    d_Code_signe,
+                    d_Unites_s
+                    );
+   CFct2_3      : Fct2_3            port map(
+                    d_ADCbin,
+                    d_A23
+                    );
    
-   
+   Cparite      : parite            port map(
+                    d_ADCbin,
+                    d_S1,
+                    d_Parite
+                    );
+   CBouton2Bin  : Bouton2Bin        port map(
+                    d_ADCbin,
+                    d_Dizaines,
+                    d_Unites_ns,
+                    d_Code_signe,
+                    d_Unites_s,
+                    d_erreur,
+                    i_btn(0)&i_btn(1),
+                    i_sw(1),
+                    d_AFF0,
+                    d_AFF1
+                    );
+    CDecodeur3_8:Decodeur3_8       port map(
+                    d_ADCbin,
+                    d_A23
+                    );             
+    inst_aff   :  septSegments_Top  port map (
+                    clk             => clk_5MHz,-- donnee a afficher definies sur 8 bits : chiffre hexa position 1 et 0
+                    i_AFF1          => d_AFF1, 
+                    i_AFF0          => d_AFF0,
+                    o_AFFSSD_Sim    => open,   -- ne pas modifier le "open". Ligne pour simulations seulement.
+                    o_AFFSSD        => o_SSD   -- sorties directement adaptees au connecteur PmodSSD
+                    );                 
+                    
 end BEHAVIORAL;
 
 

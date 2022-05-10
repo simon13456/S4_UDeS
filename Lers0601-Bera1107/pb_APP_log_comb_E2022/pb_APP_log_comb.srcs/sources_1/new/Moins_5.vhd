@@ -46,9 +46,8 @@ component Add4bit is
 end component;
 signal C1 : std_logic;
 signal Temp: STD_LOGIC_VECTOR (3 downto 0);
-signal Cinq : STD_LOGIC_VECTOR (3 downto 0);
+signal Cinq : STD_LOGIC_VECTOR (3 downto 0):="1011";
 begin
-    Cinq <= "1011";
     FA1: Add4bit port   map(ADCbin,Cinq,C1,Temp,C1);
     process(ADCbin)
         begin
