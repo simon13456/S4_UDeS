@@ -34,9 +34,9 @@ END T2B_tb;
 
 ARCHITECTURE behavioral OF T2B_tb IS 
 
---> Remplacer ce COMPONENT par celui de votre COMPONENT � tester 
+--> Remplacer ce COMPONENT par celui de votre COMPONENT a tester 
     -- Note: vous pouvez copier la partie PORT ( .. ) de l'entity de votre code VHDL 
-    -- et l'ins�rer dans la d�claration COMPONENT.
+    -- et l'ins�rer dans la declaration COMPONENT.
 --> Si vous voulez comparer 2 modules VHDL, vous pouvez d�clarer 2 COMPONENTS 
     -- distincts avec leurs PORT MAP respectif. 
 
@@ -67,7 +67,7 @@ end component;
    
 --> Declarez la constante PERIOD qui est utilis�e pour la simulation
 
-   CONSTANT PERIOD    : time := 10 ns;                  --  *** � ajouter avant le premier BEGIN
+   CONSTANT PERIOD    : time := 10 ns;                  --  *** a ajouter avant le premier BEGIN
 
 --> Il faut faire un port map entre vos signaux internes et le component � tester
 --> NOTE: Si vous voulez comparer 2 modules VHDL, vous devez g�nr�er 2 port maps 
@@ -77,7 +77,7 @@ BEGIN
   -- Par le "port-map" suivant, cela revient � connecter le composant aux signaux internes du tests bench
   -- UUT Unit Under Test: ce nom est habituel mais non impose.
   -- Si on simule deux composantes, on pourrait avoir UUT1, UUT2 par exemple
-  
+
   UUT: Thermo2Bin PORT MAP(
       i_ADC_th => i_ADC_th_sim, 
       ADCbin => ADCbin_sim, 
@@ -85,7 +85,7 @@ BEGIN
    );
 
  --> on assigne les signaux du vecteur de test vers les signaux connect�s au port map. 
-i_ADC_th_sim <= Thermometrique(11 downto 0); 
+  i_ADC_th_sim <= Thermometrique(11 downto 0); 
 
  
 -- *** Test Bench - User Defined Section ***
