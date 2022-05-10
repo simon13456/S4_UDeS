@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Ecole/APP/S4/App1/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/ThermoCompte.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'ThermoCompte'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Ecole/APP/S4/App1/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Thermo2Bin.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Thermo2Bin'
