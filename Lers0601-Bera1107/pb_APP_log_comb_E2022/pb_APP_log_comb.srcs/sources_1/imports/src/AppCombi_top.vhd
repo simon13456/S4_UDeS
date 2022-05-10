@@ -30,6 +30,7 @@ entity AppCombi_top is
           i_btn       : in    std_logic_vector (3 downto 0); -- Boutons de la carte Zybo
           i_sw        : in    std_logic_vector (3 downto 0); -- Interrupteurs de la carte Zybo
           sysclk      : in    std_logic;                     -- horloge systeme
+          ADCTH       : in    std_logic_vector (11 downto 0);-- signal de la carte thermométrique                    
           o_SSD       : out   std_logic_vector (7 downto 0); -- vers cnnecteur pmod afficheur 7 segments
           o_led       : out   std_logic_vector (3 downto 0); -- vers DELs de la carte Zybo
           o_led6_r    : out   std_logic;                     -- vers DEL rouge de la carte Zybo
@@ -56,25 +57,52 @@ architecture BEHAVIORAL of AppCombi_top is
  
    
  component synchro_module_v2 is
-   generic (const_CLK_syst_MHz: integer := freq_sys_MHz);
-      Port ( 
+    generic (const_CLK_syst_MHz: integer := freq_sys_MHz);
+        Port ( 
            clkm        : in  STD_LOGIC;  -- Entrï¿½e  horloge maitre
            o_CLK_5MHz  : out STD_LOGIC;  -- horloge divise utilise pour le circuit             
            o_S_1Hz     : out  STD_LOGIC  -- Signal temoin 1 Hz
             );
-      end component;  
-
-   component septSegments_Top is
-    Port (   clk          : in   STD_LOGIC;                      -- horloge systeme, typique 100 MHz (preciser par le constante)
+        end component;  
+    
+    component septSegments_Top is
+        Port (   clk          : in   STD_LOGIC;                      -- horloge systeme, typique 100 MHz (preciser par le constante)
              i_AFF0       : in   STD_LOGIC_VECTOR (3 downto 0);  -- donnee a afficher sur 8 bits : chiffre hexa position 1 et 0
              i_AFF1       : in   STD_LOGIC_VECTOR (3 downto 0);  -- donnee a afficher sur 8 bits : chiffre hexa position 1 et 0     
              o_AFFSSD_Sim : out string(1 to 2);
              o_AFFSSD     : out  STD_LOGIC_VECTOR (7 downto 0)  
            );
-   end component;
-   
+        end component;
+    
+    component Fct2_3 is                                           -- Fonction de multiplication par 2/3
+        Port ( ADCbin : in std_logic_vector(3 downto 0);             -- 
+           A23 : out std_logic_vector(3 downto 0));
+        end component;
 
-
+    component Bin2DualBCD is
+        Port ( ADCbin : in STD_LOGIC_VECTOR (3 downto 0);
+           Dizaines : out STD_LOGIC_VECTOR (3 downto 0);
+           Unites_ns : out STD_LOGIC_VECTOR (3 downto 0);
+           Code_signe : out STD_LOGIC_VECTOR (3 downto 0);
+           Unites_s : out STD_LOGIC_VECTOR (3 downto 0));
+        end component;
+    component parite is
+        Port ( ADCbin : in STD_LOGIC_VECTOR (3 downto 0);
+           S1 : in STD_LOGIC;
+           Parite : out STD_LOGIC);
+    end component;
+    component Bouton2Bin is
+        Port ( ADCbin : in STD_LOGIC_VECTOR (3 downto 0); -- Valeur hexa (Rien affiche sur daff1)
+               Dizaine : in STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD
+               Unites_ns : in STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD
+               Code_signe : in STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD - 5
+               Unite_s : in STD_LOGIC_VECTOR (3 downto 0); -- Valeur BCD - 5
+               erreur : in STD_LOGIC;
+               BTN : in STD_LOGIC_VECTOR (1 downto 0);
+               S2 : in STD_LOGIC;
+               DAFF0 : out STD_LOGIC_VECTOR (3 downto 0);
+               DAFF1 : out STD_LOGIC_VECTOR (3 downto 0));
+    end component;
 begin
   
     inst_synch : synchro_module_v2
@@ -105,6 +133,7 @@ begin
    o_led6_r            <=  d_Cout;                      -- La led couleur reprï¿½sente aussi la retenue en sortie  Cout
    o_pmodled           <=  d_opa & d_opb;               -- Les opï¿½randes d'entrï¿½s reproduits combinï¿½s sur Pmod8LD
    o_led (3 downto 0)  <=  '0' & '0' & '0' & d_S_1Hz;   -- La LED0 sur la carte reprï¿½sente la retenue d'entrï¿½e        
+-- Partie ajouté pour l'app   
    
    
 end BEHAVIORAL;
