@@ -172,4 +172,6 @@ eCheck4 : thermoEr port map (
           groupOf4Bits(3) => '0',
           erreur => E4           
 );
+erreur <= E1 or E2 or E3 or E4;
+ADCbin <= sumS_v;
 end Behavioral;

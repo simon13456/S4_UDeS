@@ -62,15 +62,17 @@ end component;
     -- ce qui facilitera l'�criture du test et la lisibilit� du code,
     -- notamment en faisant appara�tre clairement une structure de table de v�rit�
 
- -- Creation d'un signal interne (3 bits)
+ -- Creation de signal interne 
    SIGNAL Thermometrique : std_logic_vector (11 downto 0);
+--   signal init_vec : std_logic_vector (3 downto 0);
+--   signal init_bit : std_logic;
    
 --> Declarez la constante PERIOD qui est utilis�e pour la simulation
 
    CONSTANT PERIOD    : time := 10 ns;                  --  *** a ajouter avant le premier BEGIN
 
---> Il faut faire un port map entre vos signaux internes et le component � tester
---> NOTE: Si vous voulez comparer 2 modules VHDL, vous devez g�nr�er 2 port maps 
+--> Il faut faire un port map entre vos signaux internes et le component a tester
+--> NOTE: Si vous voulez comparer 2 modules VHDL, vous devez generer 2 port maps 
 
 
 BEGIN
@@ -86,7 +88,8 @@ BEGIN
 
  --> on assigne les signaux du vecteur de test vers les signaux connect�s au port map. 
   i_ADC_th_sim <= Thermometrique(11 downto 0); 
-
+--  ADCbin_sim <= init_vec;
+--  Err_sim <= init_bit;
  
 -- *** Test Bench - User Defined Section ***
 -- l'int�r�t de cette structure de test bench est que l'on recopie la table de v�rit�.
@@ -94,7 +97,8 @@ BEGIN
    tb : PROCESS
    BEGIN
          
-
+--         init_vec <= "0000";
+--         init_bit <= '0';
          wait for PERIOD; Thermometrique <="000000000000"; --> Code normal
          wait for PERIOD; Thermometrique <="000000000001";
          wait for PERIOD; Thermometrique <="000000000011";
