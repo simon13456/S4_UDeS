@@ -195,8 +195,7 @@ begin
                     i_AFF0          => d_AFF0,
                     o_AFFSSD_Sim    => open,   -- ne pas modifier le "open". Ligne pour simulations seulement.
                     o_AFFSSD        => o_SSD   -- sorties directement adaptees au connecteur PmodSSD
-                    );                 
-                    
+                    );  
 end BEHAVIORAL;
 
 

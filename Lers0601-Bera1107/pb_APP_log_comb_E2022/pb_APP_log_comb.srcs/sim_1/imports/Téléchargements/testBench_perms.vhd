@@ -45,7 +45,7 @@ ARCHITECTURE behavioral OF T2B_tb IS
 component Thermo2Bin 
     Port ( i_ADC_th : in STD_LOGIC_VECTOR (11 downto 0);
            ADCbin : out STD_LOGIC_VECTOR (3 downto 0);
-           Err : out STD_LOGIC);
+           erreur : out STD_LOGIC);
 end component;
 
    
@@ -54,8 +54,8 @@ end component;
     -- identifier clairement le signal qui appartient au test bench
 
    SIGNAL i_ADC_th_sim    : std_logic_vector (11 downto 0);
-   SIGNAL ADCbin_sim         : std_logic_vector (3 downto 0);
-   SIGNAL Err_sim        : std_logic;
+   SIGNAL ADCbin_sim      : std_logic_vector (3 downto 0);
+   SIGNAL Err_sim         : std_logic;
    
 --> S'il y a plusieurs bits en entr�e pour lesquels il faut d�finir des valeurs de test, 
     -- par exemple a, b, c dans l'exemple pr�sent, on recommande de cr�er un vecteur de test,
@@ -81,7 +81,7 @@ BEGIN
   UUT: Thermo2Bin PORT MAP(
       i_ADC_th => i_ADC_th_sim, 
       ADCbin => ADCbin_sim, 
-      Err => Err_sim
+      erreur => Err_sim
    );
 
  --> on assigne les signaux du vecteur de test vers les signaux connect�s au port map. 
@@ -107,9 +107,18 @@ BEGIN
          wait for PERIOD; Thermometrique <="000111111111";
          wait for PERIOD; Thermometrique <="001111111111";
          wait for PERIOD; Thermometrique <="011111111111";
-         wait for PERIOD; Thermometrique <="111111111111";
-
-         wait for PERIOD; Thermometrique <="000000000010";  --> Code avec erreur
+         wait for PERIOD; Thermometrique <="111111111110";--> Code avec erreur
+         wait for PERIOD; Thermometrique <="111111111101";
+         wait for PERIOD; Thermometrique <="111111111011";
+         wait for PERIOD; Thermometrique <="111111110111";
+         wait for PERIOD; Thermometrique <="111111101111";
+         wait for PERIOD; Thermometrique <="111111011111";
+         wait for PERIOD; Thermometrique <="111110111111";
+         wait for PERIOD; Thermometrique <="111101111111";
+         wait for PERIOD; Thermometrique <="111011111111";
+         wait for PERIOD; Thermometrique <="110111111111";
+         wait for PERIOD; Thermometrique <="101111111111";
+         wait for PERIOD; Thermometrique <="000000000010";  
          wait for PERIOD; Thermometrique <="000000101111";
          wait for PERIOD; Thermometrique <="111100001111";
                   
