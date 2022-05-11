@@ -51,7 +51,8 @@ COMPONENT AppCombi_top
    port ( 
      i_btn       : in    std_logic_vector (3 downto 0); 
      i_sw        : in    std_logic_vector (3 downto 0); 
-     sysclk      : in    std_logic; 
+     sysclk      : in    std_logic;
+     i_ADC_th    : in    std_logic_vector (11 downto 0); 
      o_SSD       : out   std_logic_vector (7 downto 0); 
      o_led       : out   std_logic_vector (3 downto 0); 
      o_led6_r    : out   std_logic;        
@@ -83,8 +84,16 @@ end COMPONENT;
     ( 
   --  vecteur de test è modifier selon les besoins
   --  res      op_a     op_b    cin
-    "00000" & "0000" & "0000" & '0',  --   0 +  0  
+    "11111" & "1111" & "1111" & '0',  --   0 +  0  
     "00000" & "0000" & "0001" & '0',  --   0 +  1 
+    "00000" & "0000" & "0001" & '0',  --   0 +  1 
+    "00000" & "0000" & "0001" & '0',  --   0 +  1 
+    "00000" & "0000" & "0001" & '0',  --   0 +  1 
+    "00000" & "0000" & "0001" & '0',  --   0 +  1 
+    "00000" & "0000" & "0001" & '0',  --   0 +  1 
+    "00000" & "0000" & "0001" & '0',  --   0 +  1 
+    
+    
     -- modifez et/ou ajoutez vos valeurs
   
     -- conserver la ligne ci-bas.
@@ -101,6 +110,7 @@ uut: AppCombi_top
    i_btn       =>   btn_sim,
    i_sw        =>   sw_sim,
    sysclk      =>   clk_sim,
+   i_ADC_th    =>   "000111111111",
    o_SSD       =>   SSD_sim,
    o_led       =>   led_sim,
    o_pmodled   =>   pmodled_sim,

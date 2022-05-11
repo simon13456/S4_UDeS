@@ -31,15 +31,15 @@ set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 } [get_ports { Y[3] }
 
 
 ##LEDs   (Circuit_Thermo_Bin, labo_adder4b)
-set_property -dict { PACKAGE_PIN M14   IOSTANDARD LVCMOS33 } [get_ports { S[0] }]; #IO_L23P_T3_35 Sch=led[0]
-set_property -dict { PACKAGE_PIN M15   IOSTANDARD LVCMOS33 } [get_ports { S[1] }]; #IO_L23N_T3_35 Sch=led[1]
-set_property -dict { PACKAGE_PIN G14   IOSTANDARD LVCMOS33 } [get_ports { S[2] }]; #IO_0_35 Sch=led[2]
-set_property -dict { PACKAGE_PIN D18   IOSTANDARD LVCMOS33 } [get_ports { S[3] }]; #IO_L3N_T0_DQS_AD1N_35 Sch=led[3]
+set_property -dict { PACKAGE_PIN M14   IOSTANDARD LVCMOS33 } [get_ports { o_led[0] }]; #IO_L23P_T3_35 Sch=led[0]
+set_property -dict { PACKAGE_PIN M15   IOSTANDARD LVCMOS33 } [get_ports { o_led[1] }]; #IO_L23N_T3_35 Sch=led[1]
+set_property -dict { PACKAGE_PIN G14   IOSTANDARD LVCMOS33 } [get_ports { o_led[2] }]; #IO_0_35 Sch=led[2]
+set_property -dict { PACKAGE_PIN D18   IOSTANDARD LVCMOS33 } [get_ports { o_led[3] }]; #IO_L3N_T0_DQS_AD1N_35 Sch=led[3]
 
 ##RGB LED 6 (labo_adder4b a decider)
 set_property -dict { PACKAGE_PIN V16   IOSTANDARD LVCMOS33 } [get_ports { CI }]; #IO_L18P_T2_34 Sch=led6_r
 set_property -dict { PACKAGE_PIN F17   IOSTANDARD LVCMOS33 } [get_ports { CO }]; #IO_L6N_T0_VREF_35 Sch=led6_g
-set_property -dict { PACKAGE_PIN M17   IOSTANDARD LVCMOS33 } [get_ports { led6_b }]; #IO_L8P_T1_AD10P_35 Sch=led6_b
+set_property -dict { PACKAGE_PIN M17   IOSTANDARD LVCMOS33 } [get_ports { o_led6_r }]; #IO_L8P_T1_AD10P_35 Sch=led6_b
 
 
 
@@ -92,7 +92,7 @@ set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { i_ADC_
 set_property -dict { PACKAGE_PIN H15   IOSTANDARD LVCMOS33 } [get_ports { i_ADC_th[11] }]; #IO_L19P_T3_35 Sch=je[4]                    
 set_property -dict { PACKAGE_PIN V13   IOSTANDARD LVCMOS33 } [get_ports { o_DEL2 }];        #IO_L3N_T0_DQS_34 Sch=je[7]                  
 set_property -dict { PACKAGE_PIN U17   IOSTANDARD LVCMOS33 } [get_ports { o_DEL3 }];        #IO_L9N_T1_DQS_34 Sch=je[8]                  
-set_property -dict { PACKAGE_PIN T17   IOSTANDARD LVCMOS33 } [get_ports { i_S1 }];       #IO_L20P_T3_34 Sch=je[9]            
+#set_property -dict { PACKAGE_PIN T17   IOSTANDARD LVCMOS33 } [get_ports { i_S1 }];       #IO_L20P_T3_34 Sch=je[9]            
 set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33 } [get_ports { i_S2 }];       #IO_L7N_T1_34 Sch=je[10]
 
 

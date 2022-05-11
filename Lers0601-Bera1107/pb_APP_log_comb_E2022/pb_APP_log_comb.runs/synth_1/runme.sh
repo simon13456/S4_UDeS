@@ -6,10 +6,14 @@
 # Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/opt/Xilinx/Vitis/2020.2/bin:/opt/Xilinx/Vivado/2020.2/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2020.2/bin
+  PATH=I:/Xilinx/Vitis/2020.2/bin;I:/Xilinx/Vivado/2020.2/ids_lite/ISE/bin/nt64;I:/Xilinx/Vivado/2020.2/ids_lite/ISE/lib/nt64:I:/Xilinx/Vivado/2020.2/bin
 else
-  PATH=/opt/Xilinx/Vitis/2020.2/bin:/opt/Xilinx/Vivado/2020.2/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2020.2/bin:$PATH
+  PATH=I:/Xilinx/Vitis/2020.2/bin;I:/Xilinx/Vivado/2020.2/ids_lite/ISE/bin/nt64;I:/Xilinx/Vivado/2020.2/ids_lite/ISE/lib/nt64:I:/Xilinx/Vivado/2020.2/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/mnt/home/gegi/usager/lers0601/Téléchargements/pb_APP_log_comb_E2022/pb_APP_log_comb.runs/synth_1'
+HD_PWD='D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Add4bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Add4bit.tcl
+EAStep vivado -log AppCombi_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AppCombi_top.tcl
