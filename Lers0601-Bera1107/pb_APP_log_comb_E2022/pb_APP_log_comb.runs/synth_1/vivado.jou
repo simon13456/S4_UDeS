@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue May 10 22:14:44 2022
-# Process ID: 21276
+# Start of session at: Wed May 11 02:37:04 2022
+# Process ID: 15132
 # Current directory: D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.runs/synth_1
 # Command line: vivado.exe -log AppCombi_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AppCombi_top.tcl
 # Log file: D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.runs/synth_1/AppCombi_top.vds

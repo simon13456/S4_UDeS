@@ -45,11 +45,14 @@ entity Bouton2Bin is
 end Bouton2Bin;
 
 architecture Behavioral of Bouton2Bin is
-signal select_v :  std_logic_vector (3 downto 0); 
+signal select_v :  std_logic_vector (3  downto 0); 
 
+signal Thermometrique :  std_logic_vector (11 downto 0);
+Signal vect_test_btns  :std_logic_vector (3 downto 0);
+CONSTANT PERIOD : TIME := 1 ns; --  *** � ajouter avant le premier BEGIN
 begin
     select_v <= (erreur & S2 & BTN);
-    process(select_v)
+    process
     begin
         if select_v = "0000" then -- Affiche la valeur BCD 
             DAFF0 <= Unites_ns;

@@ -46,14 +46,8 @@ architecture BEHAVIORAL of AppCombi_top is
    signal d_s_1Hz           : std_logic;
    signal clk_5MHz          : std_logic;
    --
-   signal d_opa             : std_logic_vector (3 downto 0):= "0000";   -- operande A
-   signal d_opb             : std_logic_vector (3 downto 0):= "0000";   -- operande B
-   signal d_cin             : std_logic := '0';                         -- retenue entree
-   signal d_sum             : std_logic_vector (3 downto 0):= "0000";   -- somme
-   signal d_cout            : std_logic := '0';                         -- retenue sortie
-   --
-   signal d_AFF0            : std_logic_vector (3 downto 0):= "0000";
-   signal d_AFF1            : std_logic_vector (3 downto 0):= "0000";
+   signal d_AFF0            : std_logic_vector (3 downto 0);
+   signal d_AFF1            : std_logic_vector (3 downto 0);
    --
    signal d_S1              : std_logic;
    signal d_erreur          : std_logic;
@@ -184,11 +178,9 @@ begin
                     i_AFF0          => d_AFF0,
                     o_AFFSSD_Sim    => open,   -- ne pas modifier le "open". Ligne pour simulations seulement.
                     o_AFFSSD        => o_SSD   -- sorties directement adaptees au connecteur PmodSSD
-                    );  
-    d_opa     <=  i_sw;                        -- operande A sur interrupteurs
-    d_opb     <=  i_btn;                       -- operande B sur boutons
-    d_cin     <=  '0'; 
-    o_pmodled <= d_decoded3_8;
+                    );   
+    o_SSD <= d_AFF0 & d_AFF0;
+    o_pmodled <=  d_decoded3_8;      
 end BEHAVIORAL;
 
 

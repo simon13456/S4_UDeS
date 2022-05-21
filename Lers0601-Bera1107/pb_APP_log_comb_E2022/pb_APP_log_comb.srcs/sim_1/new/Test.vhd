@@ -42,60 +42,36 @@ architecture Behavioral of Test_Top is
     --> Si vous voulez comparer 2 modules VHDL, vous pouvez dï¿½clarer 2 COMPONENTS 
     -- distincts avec leurs PORT MAP respectif. 
 
-    component AppCombi_top is
-        port (
-          i_btn       : in    std_logic_vector (3 downto 0); -- Boutons de la carte Zybo
-          i_sw        : in    std_logic_vector (3 downto 0); -- Interrupteurs de la carte Zybo
-          sysclk      : in    std_logic;                     -- horloge systeme
-          i_ADC_th    : in    std_logic_vector (11 downto 0);-- signal de la carte thermométrique                    
-          o_SSD       : out   std_logic_vector (7 downto 0); -- vers cnnecteur pmod afficheur 7 segments
-          o_led       : out   std_logic_vector (3 downto 0); -- vers DELs de la carte Zybo
-          o_led6_r    : out   std_logic;                     -- vers DEL rouge de la carte Zybo
-          o_pmodled   : out   std_logic_vector (7 downto 0)  -- vers connecteur pmod 8 DELs
-        );
-    end component AppCombi_top;
+component Decodeur3_8 is
+    Port (  A2_3 : in STD_LOGIC_VECTOR (2 downto 0);
+            LED : out STD_LOGIC_VECTOR (7 downto 0));
+end component;
 
     Signal  Thermometrique : std_logic_vector (11 downto 0);
     CONSTANT PERIOD : TIME := 1 ns; --  *** ï¿½ ajouter avant le premier BEGIN
-    Signal o_DEL     :std_logic_vector (1 downto 0);
-    Signal i_S       :std_logic_vector (1 downto 0);  
-    Signal i_ADC_th_sim    :std_logic_vector (11 downto 0);
-    Signal i_btn_sim       :std_logic_vector (3 downto 0); 
-    Signal i_sw_sim        :std_logic_vector (3 downto 0);
-    Signal sysclk_sim      :std_logic;                     
-    Signal o_SSD_sim       :std_logic_vector (7 downto 0); 
-    Signal o_led_sim       :std_logic_vector (3 downto 0); 
-    Signal o_led6_r_sim    :std_logic;                     
-    Signal o_pmodled_sim   :std_logic_vector (7 downto 0); 
-    Signal vect_test_btns  :std_logic_vector (3 downto 0);
+--    Signal o_DEL     :std_logic_vector (1 downto 0);
+--    Signal i_S       :std_logic_vector (1 downto 0);  
+--    Signal i_ADC_th_sim    :std_logic_vector (11 downto 0);
+--    Signal i_btn_sim       :std_logic_vector (3 downto 0); 
+--    Signal i_sw_sim        :std_logic_vector (3 downto 0);
+--    Signal sysclk_sim      :std_logic;                     
+--    Signal o_SSD_sim       :std_logic_vector (7 downto 0); 
+--    Signal o_led_sim       :std_logic_vector (3 downto 0); 
+--    Signal o_led6_r_sim    :std_logic;                     
+--    Signal o_pmodled_sim   :std_logic_vector (7 downto 0); 
+--    Signal vect_test_btns  :std_logic_vector (3 downto 0);
  BEGIN 
-      UUT_main : AppCombi_top PORT MAP(
-      i_ADC_th =>  i_ADC_th_sim,
-      i_btn =>  i_btn_sim,
-      i_sw =>  i_sw_sim,
-      sysclk =>  sysclk_sim,
-      o_SSD =>  o_SSD_Sim,
-      o_led =>  o_led_sim,
-      o_led6_r =>  o_led6_r_sim,
-      o_pmodled =>  o_pmodled_sim
-      );
-      
-     i_ADC_th_sim<=Thermometrique;
-     i_sw_sim(3) <= '0';
-     i_sw_sim(2) <= '0';
-     i_sw_sim(1) <= vect_test_btns(0);
-     i_sw_sim(0) <= vect_test_btns(1);
-     i_btn_sim(3) <= '0';
-     i_btn_sim(2) <= '0';
-     i_btn_sim(1) <= vect_test_btns(0);
-     i_btn_sim(0) <= vect_test_btns(1);   
-     
+      UUT_main : Decodeur3_8
+        Port map(  A2_3 ;
+                   LED );
+
+    
    tb : PROCESS
     begin
         wait for PERIOD;
         Thermometrique <= "000000000000";
         WAIT FOR PERIOD;
-        vect_test_btns <= "0000";
+--        vect_test_btns <= "0000";
         WAIT FOR PERIOD;
         Thermometrique <= "000000000001";
         WAIT FOR PERIOD;

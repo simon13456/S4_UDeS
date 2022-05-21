@@ -17,18 +17,18 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 6560
+INFO: [Synth 8-7075] Helper process launched with PID 15776
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1138.180 ; gain = 11.988
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1138.941 ; gain = 12.680
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'AppCombi_top' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:41]
 	Parameter const_CLK_syst_MHz bound to: 125 - type: integer 
-INFO: [Synth 8-3491] module 'synchro_module_v2' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:40' bound to instance 'inst_synch' of component 'synchro_module_v2' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:133]
+INFO: [Synth 8-3491] module 'synchro_module_v2' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:40' bound to instance 'inst_synch' of component 'synchro_module_v2' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:127]
 INFO: [Synth 8-638] synthesizing module 'synchro_module_v2' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:49]
 	Parameter const_CLK_syst_MHz bound to: 125 - type: integer 
 INFO: [Synth 8-113] binding component instance 'ClockBuffer' to cell 'BUFG' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:85]
 INFO: [Synth 8-256] done synthesizing module 'synchro_module_v2' (1#1) [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:49]
-INFO: [Synth 8-3491] module 'Thermo2Bin' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Thermo2Bin.vhd:34' bound to instance 'CThermo2Bin' of component 'Thermo2Bin' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:142]
+INFO: [Synth 8-3491] module 'Thermo2Bin' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Thermo2Bin.vhd:34' bound to instance 'CThermo2Bin' of component 'Thermo2Bin' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:136]
 INFO: [Synth 8-638] synthesizing module 'Thermo2Bin' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Thermo2Bin.vhd:40]
 INFO: [Synth 8-3491] module 'ThermoCompte' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/ThermoCompte.vhd:34' bound to instance 'compteur1' of component 'ThermoCompte' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Thermo2Bin.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'ThermoCompte' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/ThermoCompte.vhd:39]
@@ -58,7 +58,7 @@ INFO: [Synth 8-3491] module 'thermoEr' declared at 'D:/Simon/Desktop/Repo/S4_UDe
 INFO: [Synth 8-3491] module 'thermoEr' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/thermoEr.vhd:34' bound to instance 'eCheck3' of component 'thermoEr' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Thermo2Bin.vhd:161]
 INFO: [Synth 8-3491] module 'thermoEr' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/thermoEr.vhd:34' bound to instance 'eCheck4' of component 'thermoEr' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Thermo2Bin.vhd:168]
 INFO: [Synth 8-256] done synthesizing module 'Thermo2Bin' (7#1) [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Thermo2Bin.vhd:40]
-INFO: [Synth 8-3491] module 'Bin2DualBCD' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD.vhd:34' bound to instance 'CBin2DualBCD' of component 'Bin2DualBCD' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:148]
+INFO: [Synth 8-3491] module 'Bin2DualBCD' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD.vhd:34' bound to instance 'CBin2DualBCD' of component 'Bin2DualBCD' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:142]
 INFO: [Synth 8-638] synthesizing module 'Bin2DualBCD' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD.vhd:42]
 INFO: [Synth 8-3491] module 'Bin2DualBCD_NS' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD_NS.vhd:34' bound to instance 'CBin2DualBCD_NS' of component 'Bin2DualBCD_NS' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD.vhd:59]
 INFO: [Synth 8-638] synthesizing module 'Bin2DualBCD_NS' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD_NS.vhd:40]
@@ -72,16 +72,16 @@ INFO: [Synth 8-3491] module 'Bin2DualBCD_S' declared at 'D:/Simon/Desktop/Repo/S
 INFO: [Synth 8-638] synthesizing module 'Bin2DualBCD_S' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD_S.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'Bin2DualBCD_S' (10#1) [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD_S.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'Bin2DualBCD' (11#1) [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD.vhd:42]
-INFO: [Synth 8-3491] module 'Fct2_3' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Fct2_3.vhd:34' bound to instance 'CFct2_3' of component 'Fct2_3' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:155]
+INFO: [Synth 8-3491] module 'Fct2_3' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Fct2_3.vhd:34' bound to instance 'CFct2_3' of component 'Fct2_3' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:149]
 INFO: [Synth 8-638] synthesizing module 'Fct2_3' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Fct2_3.vhd:39]
 INFO: [Synth 8-3491] module 'Add4bit' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add4bit.vhd:34' bound to instance 'FA1' of component 'Add4bit' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Fct2_3.vhd:53]
 INFO: [Synth 8-256] done synthesizing module 'Fct2_3' (12#1) [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Fct2_3.vhd:39]
-INFO: [Synth 8-3491] module 'parite' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/parite.vhd:34' bound to instance 'Cparite' of component 'parite' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:160]
+INFO: [Synth 8-3491] module 'parite' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/parite.vhd:34' bound to instance 'Cparite' of component 'parite' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:154]
 INFO: [Synth 8-638] synthesizing module 'parite' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/parite.vhd:40]
 INFO: [Synth 8-226] default block is never used [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/parite.vhd:46]
 INFO: [Synth 8-226] default block is never used [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/parite.vhd:82]
 INFO: [Synth 8-256] done synthesizing module 'parite' (13#1) [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/parite.vhd:40]
-INFO: [Synth 8-3491] module 'Bouton2Bin' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bouton2Bin.vhd:34' bound to instance 'CBouton2Bin' of component 'Bouton2Bin' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:165]
+INFO: [Synth 8-3491] module 'Bouton2Bin' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bouton2Bin.vhd:34' bound to instance 'CBouton2Bin' of component 'Bouton2Bin' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:159]
 INFO: [Synth 8-638] synthesizing module 'Bouton2Bin' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bouton2Bin.vhd:47]
 WARNING: [Synth 8-614] signal 'Unites_ns' is read in the process but is not in the sensitivity list [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bouton2Bin.vhd:52]
 WARNING: [Synth 8-614] signal 'Dizaine' is read in the process but is not in the sensitivity list [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bouton2Bin.vhd:52]
@@ -89,10 +89,10 @@ WARNING: [Synth 8-614] signal 'ADCbin' is read in the process but is not in the 
 WARNING: [Synth 8-614] signal 'Unite_s' is read in the process but is not in the sensitivity list [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bouton2Bin.vhd:52]
 WARNING: [Synth 8-614] signal 'Code_signe' is read in the process but is not in the sensitivity list [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bouton2Bin.vhd:52]
 INFO: [Synth 8-256] done synthesizing module 'Bouton2Bin' (14#1) [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Bouton2Bin.vhd:47]
-INFO: [Synth 8-3491] module 'Decodeur3_8' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Decodeur3_8.vhd:34' bound to instance 'CDecodeur3_8' of component 'Decodeur3_8' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:177]
+INFO: [Synth 8-3491] module 'Decodeur3_8' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Decodeur3_8.vhd:34' bound to instance 'CDecodeur3_8' of component 'Decodeur3_8' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:171]
 INFO: [Synth 8-638] synthesizing module 'Decodeur3_8' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Decodeur3_8.vhd:39]
 INFO: [Synth 8-256] done synthesizing module 'Decodeur3_8' (15#1) [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Decodeur3_8.vhd:39]
-INFO: [Synth 8-3491] module 'septSegments_Top' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:46' bound to instance 'inst_aff' of component 'septSegments_Top' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:181]
+INFO: [Synth 8-3491] module 'septSegments_Top' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:46' bound to instance 'inst_aff' of component 'septSegments_Top' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:175]
 INFO: [Synth 8-638] synthesizing module 'septSegments_Top' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:56]
 	Parameter const_CLK_MHz bound to: 100 - type: integer 
 INFO: [Synth 8-3491] module 'septSegments_encodeur' declared at 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd:44' bound to instance 'inst_segm_lsb' of component 'septSegments_encodeur' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:83]
@@ -108,18 +108,18 @@ INFO: [Synth 8-256] done synthesizing module 'septSegments_refreshPmod' (17#1) [
 INFO: [Synth 8-256] done synthesizing module 'septSegments_Top' (18#1) [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:56]
 INFO: [Synth 8-256] done synthesizing module 'AppCombi_top' (19#1) [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:41]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1194.387 ; gain = 68.195
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1194.621 ; gain = 68.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1194.387 ; gain = 68.195
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1194.621 ; gain = 68.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1194.387 ; gain = 68.195
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1194.621 ; gain = 68.359
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1194.387 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1194.621 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -169,29 +169,29 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/AppCombi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1306.625 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1306.277 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1306.625 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1306.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1306.625 ; gain = 180.434
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1306.277 ; gain = 180.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1306.625 ; gain = 180.434
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1306.277 ; gain = 180.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1306.625 ; gain = 180.434
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1306.277 ; gain = 180.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.625 ; gain = 180.434
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1306.277 ; gain = 180.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -233,36 +233,36 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1306.625 ; gain = 180.434
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1306.277 ; gain = 180.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1306.625 ; gain = 180.434
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1306.277 ; gain = 180.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1306.625 ; gain = 180.434
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1306.277 ; gain = 180.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 Found timing loop:
-     0: i_53/O (LUT2)
+     0: i_47/O (LUT2)
       [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:48]
-     1: i_53/I0 (LUT2)
-     2: i_17/O (LUT4)
-      [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitA.vhd:48]
-     3: i_17/I2 (LUT4)
-     4: i_53/O (LUT2)
+     1: i_47/I1 (LUT2)
+     2: i_69/O (LUT4)
+      [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:28]
+     3: i_69/I1 (LUT4)
+     4: i_47/O (LUT2)
       [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:48]
 CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:28]
-Inferred a: "set_disable_timing -from I0 -to O i_53"
+Inferred a: "set_disable_timing -from I1 -to O i_47"
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1310.168 ; gain = 183.977
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1321.129 ; gain = 194.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -280,44 +280,63 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1322.977 ; gain = 196.785
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1321.570 ; gain = 195.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1322.977 ; gain = 196.785
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1321.570 ; gain = 195.309
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[3] with 1st driver pin 'o_SSD_OBUF[7]_inst_i_1/O' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:48]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[3] with 2nd driver pin 'inst_aff/inst_refresh/segm_reg[3]/Q' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:55]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[3] with 3rd driver pin 'inst_aff/inst_refresh/SEL_reg/Q' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:50]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[2] with 1st driver pin 'o_SSD_OBUF[6]_inst_i_1/O' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:48]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[2] with 2nd driver pin 'inst_aff/inst_refresh/segm_reg[2]/Q' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:55]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[2] with 3rd driver pin 'inst_aff/inst_refresh/segm_reg[6]/Q' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:55]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[1] with 1st driver pin 'o_SSD_OBUF[5]_inst_i_1/O' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:48]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[1] with 2nd driver pin 'inst_aff/inst_refresh/segm_reg[1]/Q' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:55]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[1] with 3rd driver pin 'inst_aff/inst_refresh/segm_reg[5]/Q' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:55]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[0] with 1st driver pin 'o_SSD_OBUF[4]_inst_i_1/O' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:48]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[0] with 2nd driver pin 'inst_aff/inst_refresh/segm_reg[0]/Q' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:55]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o_SSD_OBUF[0] with 3rd driver pin 'inst_aff/inst_refresh/segm_reg[4]/Q' [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:55]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        4|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
 Found timing loop:
-     0: \segm[6]_i_22 /O (LUT5)
-      [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd:48]
-     1: \segm[6]_i_22 /I2 (LUT5)
-     2: \segm[6]_i_22 /O (LUT5)
+     0: \o_SSD_OBUF[7]_inst_i_6 /O (LUT5)
+      [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:28]
+     1: \o_SSD_OBUF[7]_inst_i_6 /I1 (LUT5)
+     2: \o_SSD_OBUF[7]_inst_i_6 /O (LUT5)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:28]
-Inferred a: "set_disable_timing -from I2 -to O \segm[6]_i_22 "
+Inferred a: "set_disable_timing -from I1 -to O \o_SSD_OBUF[7]_inst_i_6 "
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1322.977 ; gain = 196.785
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1321.570 ; gain = 195.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1322.977 ; gain = 196.785
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1321.570 ; gain = 195.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1322.977 ; gain = 196.785
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1321.570 ; gain = 195.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1322.977 ; gain = 196.785
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1321.570 ; gain = 195.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -335,38 +354,38 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     2|
 |2     |CARRY4 |     4|
-|3     |LUT1   |     2|
-|4     |LUT2   |     2|
-|5     |LUT3   |    13|
+|3     |LUT1   |     3|
+|4     |LUT2   |     5|
+|5     |LUT3   |    11|
 |6     |LUT4   |    10|
-|7     |LUT5   |    14|
-|8     |LUT6   |    25|
+|7     |LUT5   |    15|
+|8     |LUT6   |    23|
 |9     |FDRE   |    30|
 |10    |IBUF   |    16|
 |11    |OBUF   |    16|
 |12    |OBUFT  |     5|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1322.977 ; gain = 196.785
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1321.570 ; gain = 195.309
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 2 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1322.977 ; gain = 84.547
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1322.977 ; gain = 196.785
+Synthesis finished with 0 errors, 14 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1321.570 ; gain = 83.652
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1321.570 ; gain = 195.309
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1322.977 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1321.570 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1332.039 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1334.660 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-87 Infos, 22 Warnings, 15 Critical Warnings and 0 Errors encountered.
+87 Infos, 22 Warnings, 27 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1332.039 ; gain = 205.848
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1334.660 ; gain = 208.398
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'D:/Simon/Desktop/Repo/S4_UDeS/Lers0601-Bera1107/pb_APP_log_comb_E2022/pb_APP_log_comb.runs/synth_1/AppCombi_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file AppCombi_top_utilization_synth.rpt -pb AppCombi_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue May 10 22:15:18 2022...
+INFO: [Common 17-206] Exiting Vivado at Wed May 11 02:37:37 2022...
